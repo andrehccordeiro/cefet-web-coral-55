@@ -1,10 +1,18 @@
 /* EXERCÍCIO 1: fontes */
 /* importá-las aqui... e definir as `font-family` da turminha... */
-
+@import "fonts/ravie.css";
+@import "font/verdana.cc";
 
 body {
   background-color: #fff;
+  font-family: 'Verdana';
+  
 }
+
+#cabecalho-pagina h1{
+  font-family: 'Ravie';
+}
+
 
 strong {
   color: #d027aa;
@@ -14,6 +22,8 @@ strong {
   background-image: linear-gradient(to bottom, #f6f1b2, #4599b2 80%);
   border-left: 1px solid #d3d3d3;
   border-right: 1px solid #d3d3d3;
+  
+  
 }
 
 #cardapio {
@@ -21,6 +31,7 @@ strong {
   border-top: 1px solid #aac0ae;
   border-bottom: 1px solid #aac0ae;
   border-left: 1px solid #aac0ae;
+  
 }
 
 #cardapio h3 {
@@ -37,15 +48,18 @@ strong {
 
 /* EXERCÍCIO 2: layout da página */
 #recipiente {
-  /* layout da página aqui */
-  /* ... */
-  /* ... */
-  /* ... */
-  /* ... */
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 144px 646px;
+  grid-template-rows: auto 1fr auto;
 }
 
 #cabecalho-pagina {
-
+  grid-column: 2/3;
+ 
+  
 }
 
 #lateral {
